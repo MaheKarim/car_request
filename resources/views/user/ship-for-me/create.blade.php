@@ -29,7 +29,7 @@
                     <i class="pe-7s-graph icon-gradient bg-mean-fruit">
                     </i>
                 </div>
-                <div>{{ __('Ship Details') }}</div>
+                <div>{{ __('Booking Details') }}</div>
             </div>
             <div class="page-title-actions">
                 <div class="d-inline-block dropdown">
@@ -62,7 +62,7 @@
             <div class="container">
              <div class="card">
                  <div class="card-header text-white bg-info">
-                     <h4>Book For Me</h4>
+                     <h4>Book My Vehicle</h4>
                  </div>
                  <div class="card-body">
                      <form class="contact-form" method="POST" action="{{ route('user.BookForMe.store') }}">
@@ -79,61 +79,58 @@
                                  </div>
                          @endif
                          <!-- error message end -->
-                             <label for="product_name">Product Name</label>
+                             <label for="product_name">Name</label>
                              <input type="text" name="product_name" class="form-control @error('product_name') is-invalid @enderror" value="{{ old('product_name') }}" required>
 
                              @error('product_name')
                              <div class="alert alert-danger">{{ $message }}</div>
                              @enderror
 
-                             <label for="product_link">Product Link</label>
+                             <label for="product_link">Department</label>
                              <input type="text" name="product_link" class="form-control" value="{{ old('') }}">
 
-                             <label for="product_weight">Product Weight</label>
-                             <input type="text" name="product_weight" class="form-control @error('product_weight') is-invalid @enderror" value="{{ old('product_weight') }}" required>
+                             <label for="comment">Vehicle Type</label>
+                             <input type="text" name="comment" class="form-control" value="{{ old('comment') }}" placeholder="Car or Bus">
 
-                             @error('product_weight')
+                             <label for="journey_start_date">Journey Start Date</label>
+                             <input type="datetime-local" name="journey_start_date" class="form-control @error('journey_start_date') is-invalid @enderror" value="{{ old('journey_start_date') }}" required>
+
+                             @error('journey_start_date')
                              <div class="alert alert-danger">{{ $message }}</div>
                              @enderror
-                             <label for="product_quantity">Product Quantity</label>
-                             <input type="text" name="product_quantity" class="form-control @error('product_quantity') is-invalid @enderror" value="{{ old('product_quantity') }}" required>
 
-                             @error('product_quantity')
+                             <label for="journey_end_date">Journey End Date</label>
+                             <input type="datetime-local" name="journey_end_date" class="form-control @error('journey_end_date') is-invalid @enderror" value="{{ old('journey_end_date') }}" required>
+
+                             @error('journey_end_date')
                              <div class="alert alert-danger">{{ $message }}</div>
                              @enderror
+
                          </div>
                             <br>
                          <div class="form-section">
-                             <label for="recvr_name">Receiver Name</label>
-                             <input type="text" name="recvr_name" class="form-control @error('product_quantity') is-invalid @enderror" value="{{ old('recvr_name') }}" required>
 
-                             @error('recvr_name')
-                             <div class="alert alert-danger">{{ $message }}</div>
-                             @enderror
+                             <label for="recvr_mail">Destination</label>
+                             <input type="text" name="recvr_destination" class="form-control" value="{{ old('recvr_destination') }}">
 
-                             <label for="recvr_phn_number1">Receiver Phone</label>
+                             <label for="pickup_point">Pickup Point</label>
+                             <input type="text" name="pickup_point" class="form-control" value="{{ old('pickup_point') }}">
+
+                             <label for="reason_for_booking">Reason For Booking</label>
+                             <input type="text" name="reason_for_booking" class="form-control" required value="{{ old('reason_for_booking') }}">
+
+                             <label for="recvr_address">Full Address</label>
+                             <textarea  name="recvr_address" class="form-control" required> </textarea>
+
+                             <label for="recvr_mail">Email</label>
+                             <input type="text" name="recvr_mail" class="form-control" value="{{ old('recvr_mail') }}">
+
+                             <label for="recvr_phn_number1">Phone Number</label>
                              <input type="text" name="recvr_phn_number1" class="form-control @error('product_quantity') is-invalid @enderror" value="{{ old('recvr_phn_number1') }}" required>
                              @error('recvr_phn_number1')
                              <div class="alert alert-danger">{{ $message }}</div>
                              @enderror
-                             <label for="recvr_phn_number2">Receiver Phone(Optional)</label>
-                             <input type="text" name="recvr_phn_number2" class="form-control @error('product_quantity') is-invalid @enderror" value="{{ old('recvr_phn_number2') }}">
 
-                             @error('recvr_phn_number2')
-                             <div class="alert alert-danger">{{ $message }}</div>
-                             @enderror
-
-                             <label for="recvr_mail">Receiver Email</label>
-                             <input type="text" name="recvr_mail" class="form-control" value="{{ old('recvr_mail') }}">
-
-                             <label for="recvr_address">Receiver House Address</label>
-                             <textarea  name="recvr_address" class="form-control" required> </textarea>
-
-                             <label for="recvr_upazila">Receiver Upazila</label>
-                             <input type="text" name="recvr_upazila" class="form-control" required value="{{ old('recvr_upazila') }}">
-
-                             <label for="recvr_zila">Receiver Zila</label>
-                             <input type="text" name="recvr_zila" class="form-control" value="{{ old('recvr_zila') }}" required>
                          </div>
 
                          <div class="form-navigation">
