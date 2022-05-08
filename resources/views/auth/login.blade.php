@@ -18,7 +18,7 @@
 <!-- end preloader -->
 
 <!-- top-nav bar start-->
-@include('frontend.partials.navbar')
+{{--@include('frontend.partials.navbar')--}}
 <!-- top-nav bar end-->
 <div class="breadcroumb-area bread-bg">
     <div class="container">
@@ -90,9 +90,9 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                @if (Route::has('register'))
+                                    <a class="btn btn-link" href="{{ route('register') }}">
+                                        {{ __('New Account ? Register Here! ') }}
                                     </a>
                                 @endif
                             </div>

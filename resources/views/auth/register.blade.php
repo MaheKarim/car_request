@@ -18,7 +18,7 @@
 <!-- end preloader -->
 
 <!-- top-nav bar start-->
-@include('frontend.partials.navbar')
+{{--@include('frontend.partials.navbar')--}}
 <!-- top-nav bar end-->
 <div class="breadcroumb-area bread-bg">
     <div class="container">

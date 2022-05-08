@@ -27,8 +27,9 @@
     Route::get('/clear', [FrontendController::class, 'clear']);
     Route::get('/install', [FrontendController::class, 'install']);
 
-    Route::resource('/', FrontendController::class);
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::permanentRedirect('/', '/login');
+//    Route::resource('/', FrontendController::class);
+//    Route::get('/home', [HomeController::class, 'index'])->name('home');
 
   // FAQ Page
     Route::get('/faq', [SiteController::class,'show']);

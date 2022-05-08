@@ -53,8 +53,8 @@
                         <ul>
                             <li><a href="{{ url('/login') }}" title="link"><i class="las la-arrow-circle-right"></i> Login</a></li>
                             <li><a href="{{ url('/register') }}" title="link"><i class="las la-arrow-circle-right"></i> Register</a></li>
-                            <li><a href="{{ url('/order-tracking') }}" title="link"><i class="las la-arrow-circle-right"></i>Order Tracking</a></li>
-                            <li><a href="{{ url('/faq') }}" title="link"><i class="las la-arrow-circle-right"></i>FAQ</a></li>
+{{--                            <li><a href="{{ url('/order-tracking') }}" title="link"><i class="las la-arrow-circle-right"></i>Order Tracking</a></li>--}}
+{{--                            <li><a href="{{ url('/faq') }}" title="link"><i class="las la-arrow-circle-right"></i>FAQ</a></li>--}}
                             </ul>
                     </div>
                 </div>
