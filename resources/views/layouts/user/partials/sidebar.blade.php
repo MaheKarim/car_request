@@ -60,47 +60,47 @@
                     </ul>
                 </li>
 
-                <li class="app-sidebar__heading">Courier Widgets</li>
+                <li class="app-sidebar__heading">Fleet Widgets</li>
                 <!-- Courier Widget -->
                 <li>
-                    <a href="#" class="{{ Request::is('user/ShipForMe*') ? 'mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-light"></i> ShipForMe - Orders
+                    <a href="#" class="{{ Request::is('user/BookForMe*') ? 'mm-active' : '' }}">
+                        <i class="metismenu-icon pe-7s-light"></i> BookForMe - Orders
                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                     </a>
                     <ul>
                         <li>
-                            <a href="{{ route('user.ShipForMe.index') }}" class="{{ Request::is('user/ShipForMe') ? 'mm-active' : '' }}">
+                            <a href="{{ route('user.BookForMe.index') }}" class="{{ Request::is('user/BookForMe') ? 'mm-active' : '' }}">
                                 <i class="metismenu-icon"></i>Check Order Status
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('user.ShipForMe.create') }}" class="{{ Request::is('user/ShipForMe/create') ? 'mm-active' : '' }}">
-                                <i class="metismenu-icon"></i>Send ShipForMe Request
+                            <a href="{{ route('user.BookForMe.create') }}" class="{{ Request::is('user/BookForMe/create') ? 'mm-active' : '' }}">
+                                <i class="metismenu-icon"></i>Send BookForMe Request
                             </a>
                         </li>
                     </ul>
                 </li>
                 <!-- Courier Widget End -->
-                <li>
-                    <a href="#" class="{{ Request::is('user/BuyForMe*') ? 'mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-id"> </i>Buy For Me
-                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="{{ route('user.BuyForMe.index') }}" class="{{ Request::is('user/BuyForMe') ? 'mm-active' : '' }}">
-                                <i class="metismenu-icon"></i>Check Buy Order Status
-                            </a>
-                        </li>
+{{--                <li>--}}
+{{--                    <a href="#" class="{{ Request::is('user/BuyForMe*') ? 'mm-active' : '' }}">--}}
+{{--                        <i class="metismenu-icon pe-7s-id"> </i>Buy For Me--}}
+{{--                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>--}}
+{{--                    </a>--}}
+{{--                    <ul>--}}
+{{--                        <li>--}}
+{{--                            <a href="{{ route('user.BuyForMe.index') }}" class="{{ Request::is('user/BuyForMe') ? 'mm-active' : '' }}">--}}
+{{--                                <i class="metismenu-icon"></i>Check Buy Order Status--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
 
-                        <li>
-                            <a href="{{ route('user.BuyForMe.create') }}" class="{{ Request::is('user/BuyForMe/create') ? 'mm-active' : '' }}">
-                                <i class="metismenu-icon"></i>Create Buy-For-Me Request
-                            </a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="{{ route('user.BuyForMe.create') }}" class="{{ Request::is('user/BuyForMe/create') ? 'mm-active' : '' }}">--}}
+{{--                                <i class="metismenu-icon"></i>Create Buy-For-Me Request--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
 
-                    </ul>
-                </li>
+{{--                    </ul>--}}
+{{--                </li>--}}
                 <li class="app-sidebar__heading">Settings Panel</li>
                 <li>
                     <a href="#">

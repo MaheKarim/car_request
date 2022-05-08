@@ -47,7 +47,7 @@ Route::group(['as'=>'user.', 'prefix'=>'user', 'middleware'=>['auth']], function
     Route::put('profile/security', [ProfileController::class,'updatePassword'])->name('profile.password.update');
 
     // Ship For Me
-    Route::resource('ShipForMe', ShipForMeController::class);
+    Route::resource('BookForMe', ShipForMeController::class);
 
     // PayNow Controller
     Route::resource('/pay-now', PayNowController::class);

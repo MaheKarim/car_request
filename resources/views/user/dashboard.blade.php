@@ -72,21 +72,21 @@
                         <li class="p-0 list-group-item">
                             <div class="grid-menu grid-menu-2col">
                                 <div class="no-gutters row">
-                                    <div class="col-sm-6">
+{{--                                    <div class="col-sm-6">--}}
+{{--                                        <div class="p-1">--}}
+{{--                                            <a href="{{ url('user/BuyForMe/create') }}"--}}
+{{--                                                class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">--}}
+{{--                                                <i class="lnr-lighter text-dark opacity-0 btn-icon-wrapper mb-2"></i>--}}
+{{--                                                Buy For Me--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+                                    <div class="col-sm-12">
                                         <div class="p-1">
-                                            <a href="{{ url('user/BuyForMe/create') }}"
-                                                class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
-                                                <i class="lnr-lighter text-dark opacity-0 btn-icon-wrapper mb-2"></i>
-                                                Buy For Me
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="p-1">
-                                            <a href="{{ route('user.ShipForMe.create') }}"
-                                                class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
-                                                <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>
-                                                Ship For Me
+                                            <a href="{{ route('user.BookForMe.create') }}"
+                                                class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-info">
+                                                <i class="lnr-construction text-info opacity-7 btn-icon-wrapper mb-2"></i>
+                                                Book For Me
                                             </a>
                                         </div>
                                     </div>

@@ -16,12 +16,12 @@
                                 <li class="active">
                                     <a href="{{ url('/') }}" title="Home">Home +</a>
                                 </li>
-                                <li><a href="#" title="services">Services +</a>
-                                    <ul>
-                                        <li><a href="services.html" title="Services">Ship For Me</a></li>
-                                        <li><a href="service-details.html" title="Service Details">Buy For Me</a></li>
-                                    </ul>
-                                </li>
+{{--                                <li><a href="#" title="services">Services +</a>--}}
+{{--                                    <ul>--}}
+{{--                                        <li><a href="services.html" title="Services">Ship For Me</a></li>--}}
+{{--                                        <li><a href="service-details.html" title="Service Details">Buy For Me</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
                                         <li><a href="{{ url('/faq') }}" title="faq">FAQ</a></li>
 
                                 <li>

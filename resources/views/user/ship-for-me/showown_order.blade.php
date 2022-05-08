@@ -1,6 +1,6 @@
 @extends('layouts.user.app')
 
-@section('title','ShipForMe Order')
+@section('title','BookForMe Order')
 
 @push('css_new')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
@@ -51,7 +51,7 @@
                                 <td class="text-center">{{ $shipforme->comment }}</td>
                                 <td class="text-center">{{ $shipforme->created_at->diffForHumans() }}</td>
                                 <td class="text-center">
-                                    <a class="btn btn-secondary btn-sm" href="{{ route('user.ShipForMe.show',$shipforme->id) }}"><i
+                                    <a class="btn btn-secondary btn-sm" href="{{ route('user.BookForMe.show',$shipforme->id) }}"><i
                                             class="fas fa-eye"></i>
                                         <span>Show</span>
                                     </a>

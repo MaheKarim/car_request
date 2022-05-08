@@ -62,10 +62,10 @@
             <div class="container">
              <div class="card">
                  <div class="card-header text-white bg-info">
-                     <h4>Ship For Me</h4>
+                     <h4>Book For Me</h4>
                  </div>
                  <div class="card-body">
-                     <form class="contact-form" method="POST" action="{{ route('user.ShipForMe.store') }}">
+                     <form class="contact-form" method="POST" action="{{ route('user.BookForMe.store') }}">
                          @csrf
                          <div class="form-section">
                              <!-- error message -->
