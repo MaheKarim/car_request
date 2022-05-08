@@ -28,7 +28,7 @@
     Route::get('/dashboard', DashboardController::class)->name('dashboard');
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
-    Route::resource('us-address', USAddressController::class);
+    Route::resource('office-address', USAddressController::class);
     Route::resource('status', StatusController::class);
     Route::resource('faq-system', FAQController::class);
 

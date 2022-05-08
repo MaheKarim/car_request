@@ -54,7 +54,7 @@
                                 <td class="text-center">{{ $uSAddress->updated_at->diffForHumans() }}</td>
 
                                 <td class="text-center">
-                                    <a href="{{ route('app.us-address.edit', $uSAddress->id) }}"
+                                    <a href="{{ route('app.office-address.edit', $uSAddress->id) }}"
                                         class="btn btn-info btn-sm">
                                         <i class="fas fa-edit"></i>
                                         <span>Edit</span>
@@ -66,7 +66,7 @@
                                             <span>Delete</span>
                                         </button>
                                         <form id="delete-form-{{$uSAddress->id}}"
-                                              action="{{ route('app.us-address.destroy', $uSAddress->id) }}" method="POST"
+                                              action="{{ route('app.office-address.destroy', $uSAddress->id) }}" method="POST"
                                               style="display: none;">
                                             @csrf
                                             @method('DELETE ')

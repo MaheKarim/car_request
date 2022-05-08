@@ -49,7 +49,7 @@
         <div class="col-md-3">
             <div class="main-card mb-3 card">
                 <div class="card-border card card-body border-primary">
-                    <h5 class="card-title">Our US Address</h5>
+                    <h5 class="card-title">Our Office Address</h5>
                     {{ $usaddresses->house_number }} <br>
                     {{ $usaddresses->street_number }} <br>
                     {{ $usaddresses->state_name }} <br>

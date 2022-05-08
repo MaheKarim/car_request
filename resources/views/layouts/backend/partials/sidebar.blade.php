@@ -84,7 +84,7 @@
                 </li>
                 <li class="app-sidebar__heading">System Functionalities</li>
                 <li>
-                    <a href="{{ route('app.us-address.index') }}" class="{{ Request::is('app/us-address*') ? 'mm-active' : '' }}">
+                    <a href="{{ route('app.office-address.index') }}" class="{{ Request::is('app/us-address*') ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-ribbon"></i>
                         Office Address
                     </a>
