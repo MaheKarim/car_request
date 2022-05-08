@@ -14,7 +14,7 @@
                     <i class="pe-7s-cash icon-gradient bg-mean-fruit">
                     </i>
                 </div>
-                <div>{{ __('All ShipForMe Orders') }}</div>
+                <div>{{ __('All Booking List') }}</div>
             </div>
         </div>
     </div>
@@ -27,9 +27,8 @@
                         <tr>
                             <th class="text-center">#</th>
                             <th class="text-center">Track ID</th>
-                            <th class="text-center">Product Name</th>
+                            <th class="text-center">Name</th>
                             <th class="text-center">Order Status</th>
-                            <th class="text-center">Delivery Time</th>
                             <th class="text-center">Payable Money</th>
                             <th class="text-center">Payment Status</th>
                             <th class="text-center">Ordered At</th>
@@ -63,7 +62,6 @@
                                     </div>
                                 </td>
 
-                                <td class="text-center">{{ $order->delivery_time }}</td>
                                 <td class="text-center">{{ $order->payble_money }}</td>
                                 <td class="text-center">{{ $order->comment }}</td>
                                 <td class="text-center">{{ $order->created_at->diffForHumans() }}</td>

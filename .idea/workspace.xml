@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f08fba6b-cc45-4a25-a02e-6f60e5803323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/buyForMe/allorder.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/buyForMe/order_update.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend/partials/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/buy-for-me/create.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/buy-for-me/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/buy-for-me/show.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/backend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/shipForMe/order_fullview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/shipForMe/order_fullview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/shipForMe/shipforme_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/shipForMe/shipforme_admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/shipForMe/update_shipforme.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/shipForMe/update_shipforme.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/pay-now/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/pay-now/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642270809234</updated>
       <workItem from="1642270811165" duration="7436000" />
-      <workItem from="1652036472900" duration="9836000" />
+      <workItem from="1652036472900" duration="10980000" />
     </task>
     <servers />
   </component>

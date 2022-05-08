@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','ShipForMe - Order Details')
+@section('title','BookForMe - Order Details')
 
 @section('content')
     <div class="app-page-title">
@@ -46,7 +46,6 @@
                             <th class="text-center">TrackID</th>
                             <th class="text-center">Payment Status</th>
                             <th class="text-center">Payable Money</th>
-                            <th class="text-center">Delivery Date</th>
                             <th class="text-center">Order Status</th>
                             <th class="text-center">Order Last Updated</th>
                             <th class="text-center">Actions</th>
@@ -61,6 +60,7 @@
                                     <div class="widget-content-wrapper">
                                         <div class="widget-content-left flex2">
                                             <div class="widget-heading">
+                                                <!-- Comment mane Payment Status -->
                                                {{ $order->comment }}
                                             </div>
                                         </div>
@@ -68,11 +68,10 @@
                                 </div>
                             </td>
                             <td class="text-center">{{ $order->payble_money }}</td>
-                            <td class="text-center">{{ $order->delivery_time }}</td>
 
 
                             <td class="text-center">
-                                @if ($order->status->id == 1)
+                                @if ($order->status->id == 3)
                                     <div class="badge badge-danger"> {{ $order->status->status }}</div>
                                 @else
                                     <div class="badge badge-success"> {{ $order->status->status }}</div>
@@ -107,28 +106,24 @@
                             <td>{{ $order->created_at }}</td>
                         </tr>
                         <tr>
-                            <th>Sender Name</th>
+                            <th>User Name</th>
                             <td>{{ $order->User->name }}</td>
                         </tr>
                         <tr>
-                            <th>Sender PHN NO</th>
+                            <th>User PHN NO</th>
                             <td>{{ $order->User->phone_number }}</td>
                         </tr>
                         <tr>
-                            <th>Sender Email</th>
+                            <th>User Email</th>
                             <td>{{ $order->User->email }}</td>
                         </tr>
                         <tr>
-                            <th>Sender State Name</th>
+                            <th>User State Name</th>
                             <td>{{ $order->User->state_name }}</td>
                         </tr>
                         <tr>
-                            <th>Sender Country</th>
+                            <th>User Country</th>
                             <td>{{ $order->User->current_country }}</td>
-                        </tr>
-                        <tr>
-                            <th>Sender Balance</th>
-                            <td>{{ $order->User->deposit_balance }} BDT </td>
                         </tr>
                         </tbody>
                     </table>
@@ -143,51 +138,49 @@
                     <table class="table table-hover mb-0">
                         <tbody>
                         <tr>
-                            <th scope="row">Product Name:</th>
+                            <th scope="row">Name</th>
                             <td>{{ $order->product_name }}</td>
                         </tr>
 
                         <tr>
-                            <th scope="row">Product Link</th>
+                            <th scope="row">Department</th>
                             <td>{{ $order->product_link }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Product Weight</th>
-                            <td>{{ $order->product_weight }}</td>
+                            <th scope="row">Vehicle Type</th>
+                            <td>{{ $order->vehicle_type }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Product Quantity</th>
-                            <td>{{ $order->product_quantity }}</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">Receiver Name</th>
-                            <td>{{ $order->recvr_name }}</td>
+                            <th scope="row">Journey Start Date</th>
+                            <td>{{ $order->journey_start_date }}</td>
                         </tr>
 
                         <tr>
-                            <th scope="row">Receiver Contact Number 1</th>
+                            <th scope="row">Journey End Date</th>
+                            <td>{{ $order->journey_end_date }}</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Destination </th>
+                            <td>{{ $order->recvr_destination }}</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"> Contact Number 1</th>
                             <td>{{ $order->recvr_phn_number1 }}</td>
                         </tr>
+
                         <tr>
-                            <th scope="row">Receiver Contact Number 2</th>
-                            <td>{{ $order->recvr_phn_number2 }}</td>
+                            <th scope="row"> Reason For Booking</th>
+                            <td>{{ $order->reason_for_booking }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Receiver Mail</th>
+                            <th scope="row"> Mail</th>
                             <td>{{ $order->recvr_mail }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Receiver Address</th>
+                            <th scope="row">Full Address</th>
                             <td>{{ $order->recvr_address }}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Receiver Upazila</th>
-                            <td>{{ $order->recvr_upazila }}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Receiver Zila</th>
-                            <td>{{ $order->recvr_zila }}</td>
                         </tr>
                         </tbody>
                     </table>
