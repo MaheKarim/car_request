@@ -51,25 +51,14 @@
                 <li>
                     <a href="{{ url('app/shipforme-orders') }}" class="{{ Request::is('app/shipforme-orders*') ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-plugin"></i>
-                        ShipForMe - Import
+                        BookForMe - Booking Request
                     </a>
                 </li>
-                <li>
-                    <a href="{{ url('app/buyforme-orders') }}" class="{{ Request::is('app/buyforme-orders*') ? 'mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-plane"></i>
-                        BuyForMe - Export
-                    </a>
-                </li>
+
                 <li>
                     <a href="{{ url('app/payment-receive') }}" class="{{ Request::is('app/payment-receive*') ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-diamond"></i>
                         Payment Receive Status
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url('app/client-quote') }}" class="{{ Request::is('app/client-quote*') ? 'mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-right-arrow"></i>
-                        Client Quote
                     </a>
                 </li>
 
@@ -97,7 +86,7 @@
                 <li>
                     <a href="{{ route('app.us-address.index') }}" class="{{ Request::is('app/us-address*') ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-ribbon"></i>
-                        US Address
+                        Office Address
                     </a>
                 </li>
                 <li>
@@ -109,7 +98,7 @@
                 <li>
                     <a href="{{ route('app.courier-types.index') }}" class="{{ Request::is('app/courier-types*') ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-safe"></i>
-                        Courier Type's
+                        Courier / Fleets
                     </a>
                 </li>
 

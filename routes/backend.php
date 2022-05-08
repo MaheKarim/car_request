@@ -34,7 +34,6 @@
 
     // Ship For Me Admin Access
     Route::resource('shipforme-orders', ShipOrderProcessController::class);
-    Route::resource('buyforme-orders', BuyOrderProcessController::class);
 
     // Profile Controller
     Route::get('profile', [ProfileController::class,'index'])->name('profile.index');
@@ -44,8 +43,6 @@
 
     // Courier Type Controller
     Route::resource('courier-types', CourierTypeController::class);
-    // GetQuoteForm - Frontend Page
-    Route::resource('client-quote', GetQuoteFormController::class);
     // Payment Service Controller
     Route::resource('payment-service', PaymentServiceController::class);
     // Payment Receive

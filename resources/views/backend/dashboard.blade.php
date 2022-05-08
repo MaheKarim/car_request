@@ -14,7 +14,7 @@
                         Dashboard
                     @endrole
                     <div class="page-title-subheading">
-                       You are rockstar for this system
+                       You are the rockstar for our system!
                     </div>
                 </div>
             </div>
