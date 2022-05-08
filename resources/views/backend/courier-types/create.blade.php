@@ -8,7 +8,7 @@
                     <i class="pe-7s-safe icon-gradient bg-ripe-malin"></i>
                 </div>
                 <div>
-                    {{ isset($couriers) ? 'Edit' : 'Create' }} Status Management
+                    {{ isset($couriers) ? 'Edit' : 'Create' }} Vehicle & Route Management
                 </div>
             </div>
             <div class="page-title-actions">
@@ -26,11 +26,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-card mb-3 card">
-                    <form action="{{ route('app.courier-types.store') }}" method="post">
+                    <form action="{{ route('app.vehicle-routes.store') }}" method="post">
                         @csrf
 
                         <div class="card-body">
-                            <h5 class="card-title">Courier Service Information</h5>
                             <div class="form-group">
                                 <label for="courier_type_name">Identification Number</label>
                                 <input id="courier_type_name" type="text" class="form-control @error('courier_type_name') is-invalid @enderror"
@@ -46,8 +45,12 @@
                                 <label for="year">Year</label>
                                 <input id="year" type="text" class="form-control" name="year" placeholder="2017">
 
-                                <label for="condition">Condition</label>
+                                <label for="condition">Assign / Condition</label>
                                 <input id="year" type="text" class="form-control" name="condition" placeholder="Running or Off">
+                                <br>
+                                <label for="condition">Assigned Bus Route</label>
+                                <textarea type="text" class="form-control" name="route" >{{ $couriers->route ??  old('route') }} </textarea>
+
 
                             </div>
 

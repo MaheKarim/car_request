@@ -96,9 +96,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('app.courier-types.index') }}" class="{{ Request::is('app/courier-types*') ? 'mm-active' : '' }}">
+                    <a href="{{ route('app.vehicle-routes.index') }}" class="{{ Request::is('app/courier-types*') ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-safe"></i>
-                        Vehicle / Fleets / Courier
+                        Courier Vehicle - Route
                     </a>
                 </li>
 

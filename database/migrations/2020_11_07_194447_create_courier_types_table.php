@@ -19,6 +19,7 @@ class CreateCourierTypesTable extends Migration
             $table->string('registration_number');
             $table->string('year')->nullable();
             $table->string('condition')->nullable();
+            $table->longText('route')->nullable();
             $table->timestamps();
         });
     }

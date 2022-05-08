@@ -8,7 +8,7 @@
                     <i class="pe-7s-ribbon icon-gradient bg-ripe-malin"></i>
                 </div>
                 <div>
-                    {{ isset($usaddresses) ? 'Edit' : 'Create' }} US Address Management
+                    {{ isset($usaddresses) ? 'Edit' : 'Create' }} Office Address Management
                 </div>
             </div>
             <div class="page-title-actions">
@@ -30,7 +30,7 @@
                         @csrf
                         @method('PUT')
                         <div class="card-body">
-                            <h5 class="card-title">US  Address</h5>
+                            <h5 class="card-title">Office  Address</h5>
                             <div class="form-group">
                                 <label for="house_number">House Number</label>
                                 <input id="house_number" type="text" class="form-control @error('house_number') is-invalid @enderror"

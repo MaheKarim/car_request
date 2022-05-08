@@ -42,7 +42,7 @@
     Route::put('profile/password', [ProfileController::class,'updatePassword'])->name('password.update');
 
     // Courier Type Controller
-    Route::resource('courier-types', CourierTypeController::class);
+    Route::resource('vehicle-routes', CourierTypeController::class);
     // Payment Service Controller
     Route::resource('payment-service', PaymentServiceController::class);
     // Payment Receive

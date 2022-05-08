@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="page-title-actions">
-                <a href="{{ route('app.courier-types.index') }}" class="btn-shadow mr-3 btn btn-danger">
+                <a href="{{ route('app.vehicle-routes.index') }}" class="btn-shadow mr-3 btn btn-danger">
                     <i class="fa fa-arrow-circle-left"></i>
                     Back To List
                 </a>
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-card mb-3 card">
-                    <form action="{{ route('app.courier-types.update', $couriers->id) }}" method="post">
+                    <form action="{{ route('app.vehicle-routes.update', $couriers->id) }}" method="post">
                         @csrf
                         @method('PUT')
                         <div class="card-body">
@@ -48,8 +48,12 @@
                                 <label for="year">Year</label>
                                 <input id="year" type="text" class="form-control" name="year" value="{{ $couriers->year ??  old('year') }}">
 
-                                <label for="condition">Condition</label>
+                                <label for="condition">Assign / Condition</label>
                                 <input id="year" type="text" class="form-control" name="condition" placeholder="Running or Off" value="{{ $couriers->condition ??  old('condition') }}">
+
+                                <label for="condition">Assigned Bus Route</label>
+                                <textarea type="text" class="form-control" name="route" >{{ $couriers->route ??  old('route') }} </textarea>
+
 
                             </div>
                             <!-- Div Name End -->

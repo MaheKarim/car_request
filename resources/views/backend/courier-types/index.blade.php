@@ -12,13 +12,13 @@
                     <i class="pe-7s-safe icon-gradient bg-ripe-malin"></i>
                 </div>
                 <div>
-                    Vehicle  Management
+                    Vehicle & Route Management
                 </div>
             </div>
             <div class="page-title-actions">
-                <a href="{{ route('app.courier-types.create') }}" class="btn-shadow mr-3 btn btn-primary">
+                <a href="{{ route('app.vehicle-routes.create') }}" class="btn-shadow mr-3 btn btn-primary">
                     <i class="fa fa-plus-square"></i>
-                    Add Vehicle Type
+                    Add Vehicle & Route
                 </a>
             </div>
         </div>
@@ -41,6 +41,7 @@
                                 <th class="text-center">Registration Number</th>
                                 <th class="text-center">Year</th>
                                 <th class="text-center">Status</th>
+                                <th class="text-center">Assigned Route</th>
                                 <th class="text-center">Courier Service Created</th>
                                 <th class="text-center">Actions</th>
                             </tr>
@@ -53,10 +54,11 @@
                                     <td class="text-center">{{ $courier->registration_number }}</td>
                                     <td class="text-center">{{ $courier->year }}</td>
                                     <td class="text-center">{{ $courier->condition }}</td>
+                                    <td class="text-center">{{ $courier->route }}</td>
                                     <td class="text-center">{{ $courier->created_at->diffForHumans() }}</td>
 
                                     <td class="text-center">
-                                        <a href="{{ route('app.courier-types.edit', $courier->id) }}"
+                                        <a href="{{ route('app.vehicle-routes.edit', $courier->id) }}"
                                            class="btn btn-info btn-sm">
                                             <i class="fas fa-edit"></i>
                                             <span>Edit</span>
@@ -68,7 +70,7 @@
                                                 <span>Delete</span>
                                             </button>
                                             <form id="delete-form-{{ $courier->id }}"
-                                                  action="{{ route('app.courier-types.destroy', $courier->id) }}" method="POST"
+                                                  action="{{ route('app.vehicle-routes.destroy', $courier->id) }}" method="POST"
                                                   style="display: none;">
                                                 @csrf
                                                 @method('DELETE ')

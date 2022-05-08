@@ -12,15 +12,9 @@
                     <i class="pe-7s-ribbon icon-gradient bg-ripe-malin"></i>
                 </div>
                 <div>
-                   US Address Management
+                    Office Address Management
                 </div>
             </div>
-{{--            <div class="page-title-actions">--}}
-{{--                <a href="{{ route('app.us-address.create') }}" class="btn-shadow mr-3 btn btn-primary">--}}
-{{--                    <i class="fa fa-plus-square"></i>--}}
-{{--                    Add US Store Address--}}
-{{--                </a>--}}
-{{--            </div>--}}
         </div>
     </div>
 
@@ -30,7 +24,7 @@
             <div class="col-md-12">
                 <div class="main-card mb-3 card">
                     <div class="card-header">
-                        Our US Address
+                        Our Office Address
                     </div>
                     <div class="table-responsive">
                         <table
