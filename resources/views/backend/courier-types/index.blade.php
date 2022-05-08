@@ -12,13 +12,13 @@
                     <i class="pe-7s-safe icon-gradient bg-ripe-malin"></i>
                 </div>
                 <div>
-                    Courier Type Management
+                    Vehicle  Management
                 </div>
             </div>
             <div class="page-title-actions">
                 <a href="{{ route('app.courier-types.create') }}" class="btn-shadow mr-3 btn btn-primary">
                     <i class="fa fa-plus-square"></i>
-                    Add Courier Type
+                    Add Vehicle Type
                 </a>
             </div>
         </div>
@@ -29,7 +29,7 @@
             <div class="col-md-12">
                 <div class="main-card mb-3 card">
                     <div class="card-header">
-                        Courier Service Type
+                        Vehicle Service
                     </div>
                     <div class="table-responsive">
                         <table
@@ -37,7 +37,10 @@
                             <thead>
                             <tr>
                                 <th class="text-center">#</th>
-                                <th class="text-center">Courier Service Name</th>
+                                <th class="text-center">Identification Number</th>
+                                <th class="text-center">Registration Number</th>
+                                <th class="text-center">Year</th>
+                                <th class="text-center">Status</th>
                                 <th class="text-center">Courier Service Created</th>
                                 <th class="text-center">Actions</th>
                             </tr>
@@ -47,6 +50,9 @@
                                 <tr>
                                     <td class="text-center text-muted">{{ $key+1 }}</td>
                                     <td class="text-center">{{ $courier->courier_type_name }}</td>
+                                    <td class="text-center">{{ $courier->registration_number }}</td>
+                                    <td class="text-center">{{ $courier->year }}</td>
+                                    <td class="text-center">{{ $courier->condition }}</td>
                                     <td class="text-center">{{ $courier->created_at->diffForHumans() }}</td>
 
                                     <td class="text-center">

@@ -32,7 +32,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Courier Service Information</h5>
                             <div class="form-group">
-                                <label for="courier_type_name">Courier Service Type Name</label>
+                                <label for="courier_type_name">Identification Number</label>
                                 <input id="courier_type_name" type="text" class="form-control @error('courier_type_name') is-invalid @enderror"
                                        name="courier_type_name" required autofocus>
                                 @error('courier_type_name')
@@ -40,11 +40,18 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                                <label for="registration_number">Registration Number</label>
+                                <input id="registration_number" type="text" class="form-control" name="registration_number">
+
+                                <label for="year">Year</label>
+                                <input id="year" type="text" class="form-control" name="year" placeholder="2017">
+
+                                <label for="condition">Condition</label>
+                                <input id="year" type="text" class="form-control" name="condition" placeholder="Running or Off">
+
                             </div>
 
-
                             <!-- Div Name End -->
-
                             <button type="submit" class="btn btn-primary">
                                 @isset($couriers)
                                     <i class="fas fa-arrow-circle-up"></i>

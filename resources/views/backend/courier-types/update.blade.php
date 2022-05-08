@@ -8,7 +8,7 @@
                     <i class="pe-7s-safe icon-gradient bg-ripe-malin"></i>
                 </div>
                 <div>
-                    {{ isset($couriers) ? 'Edit' : 'Create' }} Courier Type Management
+                    {{ isset($couriers) ? 'Edit' : 'Create' }}  Vehicle Management
                 </div>
             </div>
             <div class="page-title-actions">
@@ -30,9 +30,8 @@
                         @csrf
                         @method('PUT')
                         <div class="card-body">
-                            <h5 class="card-title">Status Information</h5>
                             <div class="form-group">
-                                <label for="courier_type_name">Courier Type Name</label>
+                                <label for="courier_type_name">Identification Number</label>
                                 <input id="courier_type_name" type="text" class="form-control @error('courier_type_name') is-invalid @enderror"
                                        name="courier_type_name" value="{{ $couriers->courier_type_name ??  old('courier_type_name') }}" required autofocus>
                                 <input type="hidden" name="courier_id"  value="{{ $couriers->id }}">
@@ -42,6 +41,16 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+
+                                <label for="registration_number">Registration Number</label>
+                                <input id="registration_number" type="text" class="form-control" name="registration_number" value="{{ $couriers->registration_number ??  old('registration_number') }}">
+
+                                <label for="year">Year</label>
+                                <input id="year" type="text" class="form-control" name="year" value="{{ $couriers->year ??  old('year') }}">
+
+                                <label for="condition">Condition</label>
+                                <input id="year" type="text" class="form-control" name="condition" placeholder="Running or Off" value="{{ $couriers->condition ??  old('condition') }}">
+
                             </div>
                             <!-- Div Name End -->
                             <button type="submit" class="btn btn-primary">

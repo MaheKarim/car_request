@@ -16,6 +16,9 @@ class CreateCourierTypesTable extends Migration
         Schema::create('courier_types', function (Blueprint $table) {
             $table->id();
             $table->string('courier_type_name');
+            $table->string('registration_number');
+            $table->string('year')->nullable();
+            $table->string('condition')->nullable();
             $table->timestamps();
         });
     }
