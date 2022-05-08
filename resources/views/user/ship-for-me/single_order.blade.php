@@ -15,7 +15,7 @@
             <div class="page-title-actions">
                 <div class="d-inline-block dropdown">
 
-                    <a href="{{ route('user.ShipForMe.index') }}" class="btn-shadow btn btn-info">
+                    <a href="{{ route('user.BookForMe.index') }}" class="btn-shadow btn btn-info">
                         <span class="btn-icon-wrapper pr-2 opacity-7">
                             <i class="fas fa-arrow-circle-left fa-w-20"></i>
                         </span>
@@ -43,51 +43,53 @@
                     <table class="table table-hover mb-0">
                         <tbody>
                         <tr>
-                            <th scope="row">Product Name:</th>
+                            <th scope="row"> Name:</th>
                             <td>{{ $shipForMe->product_name }}</td>
                         </tr>
 
                         <tr>
-                            <th scope="row">Product Link</th>
+                            <th scope="row">Department</th>
                             <td>{{ $shipForMe->product_link }}</td>
                         </tr>
+
                         <tr>
-                            <th scope="row">Product Weight</th>
-                            <td>{{ $shipForMe->product_weight }}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Product Quantity</th>
-                            <td>{{ $shipForMe->product_quantity }}</td>
+                            <th scope="row">Vehicle Type</th>
+                            <td>{{ $shipForMe->vehicle_type }}</td>
                         </tr>
 
                         <tr>
-                            <th scope="row">Receiver Name</th>
-                            <td>{{ $shipForMe->recvr_name }}</td>
+                            <th scope="row">Reason For Booking</th>
+                            <td>{{ $shipForMe->reason_for_booking }}</td>
                         </tr>
 
                         <tr>
-                            <th scope="row">Receiver Contact Number 1</th>
+                            <th scope="row"> Contact Number</th>
                             <td>{{ $shipForMe->recvr_phn_number1 }}</td>
                         </tr>
+
                         <tr>
-                            <th scope="row">Receiver Contact Number 2</th>
-                            <td>{{ $shipForMe->recvr_phn_number2 }}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Receiver Mail</th>
+                            <th scope="row"> Email</th>
                             <td>{{ $shipForMe->recvr_mail }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Receiver Address</th>
+                            <th scope="row">Address</th>
                             <td>{{ $shipForMe->recvr_address }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Receiver Upazila</th>
-                            <td>{{ $shipForMe->recvr_upazila }}</td>
+                            <th scope="row">Destination</th>
+                            <td>{{ $shipForMe->recvr_destination }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Receiver Zila</th>
-                            <td>{{ $shipForMe->recvr_zila }}</td>
+                            <th scope="row">Journey Start Date</th>
+                            <td>{{ $shipForMe->journey_start_date }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Journey End Date</th>
+                            <td>{{ $shipForMe->journey_end_date }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pickup Address</th>
+                            <td>{{ $shipForMe->pickup_point }}</td>
                         </tr>
                         <tr>
                             <th scope="row">Payable Money</th>
@@ -102,18 +104,9 @@
                             @endif
                         </tr>
                         <tr>
-                            <th scope="row">Estimated Delivery Time</th>
-                            @if($shipForMe->delivery_time == NULL)
-                                <td> - - - -  </td>
-                            @else
-                                <td>{{ $shipForMe->delivery_time }}</td>
-                            @endif
-                        </tr>
-
-                        <tr>
                             <th scope="row">Order Status</th>
                             <td>
-                                @if ($shipForMe->status->id == 1)
+                                @if ($shipForMe->status->id == 3)
                                     <div class="badge badge-danger">Order Pending Right Now!</div>
                                 @else
                                     <div class="badge badge-success">Approve</div>

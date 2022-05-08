@@ -21,6 +21,7 @@ class CreateShipForMesTable extends Migration
             $table->dateTime('journey_start_date')->nullable();
             $table->dateTime('journey_end_date')->nullable();
             $table->string('pickup_point');
+            $table->string('vehicle_type');
             $table->longText('reason_for_booking');
             $table->string('recvr_phn_number1')->nullable();
             $table->string('recvr_mail')->nullable();

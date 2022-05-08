@@ -89,8 +89,8 @@
                              <label for="product_link">Department</label>
                              <input type="text" name="product_link" class="form-control" value="{{ old('') }}">
 
-                             <label for="comment">Vehicle Type</label>
-                             <input type="text" name="comment" class="form-control" value="{{ old('comment') }}" placeholder="Car or Bus">
+                             <label for="vehicle_type">Vehicle Type</label>
+                             <input type="text" name="vehicle_type" class="form-control" value="{{ old('vehicle_type') }}" placeholder="Car or Bus">
 
                              <label for="journey_start_date">Journey Start Date</label>
                              <input type="datetime-local" name="journey_start_date" class="form-control @error('journey_start_date') is-invalid @enderror" value="{{ old('journey_start_date') }}" required>
