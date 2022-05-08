@@ -36,7 +36,6 @@
 
     Auth::routes();
 
-
   // User Route Start From Here
 Route::group(['as'=>'user.', 'prefix'=>'user', 'middleware'=>['auth']], function (){
     Route::resource('dashboard', DashboardController::class);
@@ -45,17 +44,10 @@ Route::group(['as'=>'user.', 'prefix'=>'user', 'middleware'=>['auth']], function
     // Password Update
     Route::get('profile/security', [ProfileController::class,'changePassword'])->name('profile.password.change');
     Route::put('profile/security', [ProfileController::class,'updatePassword'])->name('profile.password.update');
-
-    // Ship For Me
+    // Book For Me
     Route::resource('BookForMe', ShipForMeController::class);
-
     // PayNow Controller
     Route::resource('/pay-now', PayNowController::class);
-
-    // Buy For Me
-    Route::resource('BuyForMe', BuyForMeController::class);
-    Route::get('/test/check', [BuyForMeController::class, 'test'])->name('test');
-
 });
 
    // Track Your Order
