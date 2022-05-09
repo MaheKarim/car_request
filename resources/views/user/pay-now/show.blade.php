@@ -33,6 +33,7 @@
                             <th class="text-center">TraX ID</th>
                             <th class="text-center">Paid</th>
                             <th class="text-center">Payment Status</th>
+                            <th class="text-center">Assigned Vehicle</th>
                             <th class="text-center">Payment Created At</th>
 
                         </tr>
@@ -47,6 +48,7 @@
                                 <td class="text-center">{{ $payment->payment_sender_traxid }}</td>
                                 <td class="text-center">{{ $payment->payment_sender_money }}</td>
                                 <td class="text-center">{{ $payment->status->status }}</td>
+                                <td class="text-center">{{ $payment->fleet->registration_number }}</td>
                                 <td class="text-center">{{ $payment->created_at->diffForHumans() }}</td>
                             </tr>
                         @endforeach

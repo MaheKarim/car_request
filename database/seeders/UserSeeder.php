@@ -29,8 +29,8 @@ use App\Models\User;
 
         User::updateOrCreate([
             'role_id'  => Role::where('slug', 'stuff')->first()->id,
-            'name'    => 'Stuff',
-            'email'   => 'stuff@mail.com',
+            'name'    => 'Driver',
+            'email'   => 'driver@mail.com',
             'password' => Hash::make('password'),
             'phone_number' => '+8801778966355',
             'state_name' => 'Dhaka',

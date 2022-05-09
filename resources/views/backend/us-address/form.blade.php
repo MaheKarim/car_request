@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="page-title-actions">
-                <a href="{{ route('app.us-address.index') }}" class="btn-shadow mr-3 btn btn-danger">
+                <a href="{{ route('app.office-address.index') }}" class="btn-shadow mr-3 btn btn-danger">
                     <i class="fa fa-arrow-circle-left"></i>
                     Back To List
                 </a>
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-card mb-3 card">
-                    <form action="{{ route('app.us-address.update', $usaddresses->id) }}" method="post">
+                    <form action="{{ route('app.office-address.update', $usaddresses->id) }}" method="post">
                         @csrf
                         @method('PUT')
                         <div class="card-body">

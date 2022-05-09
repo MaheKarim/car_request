@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\CourierType;
 use App\Models\PayNow;
 use Illuminate\Http\Request;
 
@@ -61,8 +62,9 @@ class PaymentStatusController extends Controller
     public function edit($id)
     {
         $payments = PayNow::findOrFail($id);
+        $fleets= CourierType::all();
 
-        return view('backend.payment-status.edit-pay-status', compact('payments'));
+        return view('backend.payment-status.edit-pay-status', compact('payments', 'fleets'));
     }
 
     /**
@@ -74,12 +76,7 @@ class PaymentStatusController extends Controller
      */
     public function update(Request $request)
     {
-//        $this->validate($request, [
-//            'status_id' => 'required'
-//        ]);
-        PayNow::findOrFail($request->id)->update([
-            'status_id' => $request->status_id,
-        ]);
+        PayNow::findOrFail($request->id)->update($request->all());
         notify()->success("Payment Status Updated","Success");
         return redirect()->route('app.payment-receive.index');
     }

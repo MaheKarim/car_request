@@ -36,7 +36,7 @@ class USAddressController extends Controller
             'telephone_number' => $request-> telephone_number,
         ]);
         notify()->success("US Address Updated Successfully","Success");
-        return redirect()->route('app.us-address.index');
+        return redirect()->route('app.office-address.index');
     }
 
 }

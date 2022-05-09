@@ -3,15 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="f08fba6b-cc45-4a25-a02e-6f60e5803323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/CourierTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/CourierTypeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/FAQController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/FAQController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/FAQ.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/FAQ.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_04_141853_create_f_a_q_s_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_04_141853_create_f_a_q_s_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/courier-types/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/courier-types/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/create_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/create_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/edit_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/edit_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/faqs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faqs/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/PaymentStatusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/PaymentStatusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/USAddressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/USAddressController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/PayNow.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PayNow.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_08_220144_create_pay_nows_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_08_220144_create_pay_nows_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/payment-status/edit-pay-status.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/payment-status/edit-pay-status.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/payment-status/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/payment-status/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/us-address/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/us-address/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/pay-now/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/pay-now/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642270809234</updated>
       <workItem from="1642270811165" duration="7436000" />
-      <workItem from="1652036472900" duration="16254000" />
+      <workItem from="1652036472900" duration="21037000" />
     </task>
     <servers />
   </component>

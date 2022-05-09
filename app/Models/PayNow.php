@@ -20,4 +20,7 @@ class PayNow extends Model
     public function service(){
         return $this->belongsTo(PaymentService::class, 'payment_name_id');
     }
+    public function fleet(){
+        return $this->belongsTo(CourierType::class, 'vehicle_id', 'id');
+    }
 }

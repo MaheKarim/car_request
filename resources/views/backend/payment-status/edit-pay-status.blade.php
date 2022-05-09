@@ -39,6 +39,14 @@
                                         <option  {{ ($payments->status_id == $status->id) ? 'selected' : '' }} value="{{ $status->id }}">{{$status->status}}</option>
                                     @endforeach
                                 </select>
+                                <!-- New Field For Adjust Bus Car -->
+                                <label>Assign Vehicle</label>
+                                <select name="vehicle_id" class="form-control select">
+
+                                @foreach ($fleets as $fleet)
+                                        <option value="{{ $fleet->id }}"> Vehicle ID: {{ $fleet->courier_type_name }} Reg NO: {{ $fleet->registration_number }} ( {{ $fleet->condition }} )</option>
+                                    @endforeach
+                                </select>
                             </div>
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-arrow-circle-up"></i>
