@@ -83,6 +83,12 @@
                         Bus Schedule FAQ
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('app.driver-info.index') }}" class="{{ Request::is('app/driver-info*') ? 'mm-active' : '' }}">
+                        <i class="metismenu-icon pe-7s-comment"></i>
+                        Driver Info
+                    </a>
+                </li>
                 <li class="app-sidebar__heading">System Functionalities</li>
                 <li >
                     <a href="{{ route('app.roles.index') }}" class="{{ Request::is('app/roles*') ? 'mm-active' : ''}}">

@@ -3,7 +3,8 @@
     use App\Http\Controllers\Backend\BuyOrderProcessController;
     use App\Http\Controllers\Backend\CourierTypeController;
     use App\Http\Controllers\Backend\DashboardController;
-    use App\Http\Controllers\Backend\FAQController;
+use App\Http\Controllers\Backend\DriverController;
+use App\Http\Controllers\Backend\FAQController;
     use App\Http\Controllers\Backend\GetQuoteFormController;
     use App\Http\Controllers\Backend\PaymentStatusController;
     use App\Http\Controllers\Backend\ProfileController;
@@ -47,3 +48,5 @@
     Route::resource('payment-service', PaymentServiceController::class);
     // Payment Receive
     Route::resource('payment-receive', PaymentStatusController::class);
+    // Driver Info
+    Route::resource('driver-info', DriverController::class);

@@ -41,23 +41,7 @@ class StatusController extends Controller
         return redirect()->route('app.status.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Status  $status
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Status $status)
-    {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Status  $status
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         Gate::authorize('app.status.edit');
@@ -65,13 +49,6 @@ class StatusController extends Controller
         return view('backend.status.form', compact('statuses'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Status  $status
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Status $status)
     {
         Gate::authorize('app.status.update');
@@ -83,12 +60,6 @@ class StatusController extends Controller
         return redirect()->route('app.status.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Status  $status
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Status $status)
     {
         Gate::authorize('app.status.destroy');
