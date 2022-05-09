@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="page-title-actions">
-                <a href="{{ route('app.courier-types.index') }}" class="btn-shadow mr-3 btn btn-danger">
+                <a href="{{ route('app.vehicle-routes.index') }}" class="btn-shadow mr-3 btn btn-danger">
                     <i class="fa fa-arrow-circle-left"></i>
                     Back To List
                 </a>

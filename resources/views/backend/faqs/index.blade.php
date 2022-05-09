@@ -12,15 +12,14 @@
                     <i class="pe-7s-comment icon-gradient bg-ripe-malin"></i>
                 </div>
                 <div>
-                    FAQ's Management
+                   Bus Schedule FAQ's Management
                 </div>
             </div>
             <div class="page-title-actions">
                 <a href="{{ route('app.faq-system.create') }}" class="btn-shadow mr-3 btn btn-primary">
                     <i class="fa fa-plus-square"></i>
-                    Add FAQ
+                  Add Bus Schedule
                 </a>
-
             </div>
         </div>
     </div>
@@ -31,15 +30,7 @@
             <div class="col-md-12">
                 <div class="main-card mb-3 card">
                     <div class="card-header">
-                        Active Users
-                        <div class="btn-actions-pane-right">
-                            <div role="group" class="btn-group-sm btn-group">
-                                <button class="active btn btn-secondary">
-                                   Latest User
-                                </button>
-
-                            </div>
-                        </div>
+                        Schedule List For Bus
                     </div>
                     <div class="table-responsive">
                         <table
@@ -48,8 +39,12 @@
                             <thead>
                             <tr>
                                 <th class="text-center">#</th>
-                                <th class="text-center">FAQ Question</th>
-                                <th class="text-center">FAQ Answer</th>
+                                <th class="text-center">Identification Number</th>
+                                <th class="text-center">1st Slot</th>
+                                <th class="text-center">2nd Slot</th>
+                                <th class="text-center">3rd Slot</th>
+                                <th class="text-center">4th Slot</th>
+                                <th class="text-center">5th Slot</th>
                                 <th class="text-center">Updated At</th>
                                 <th class="text-center">Actions</th>
                             </tr>
@@ -58,12 +53,12 @@
                                 @foreach($faqs as $key => $faq)
                             <tr>
                                 <td class="text-center text-muted">{{ $key+1 }}</td>
-                                <td class="text-center">{{ $faq->faq_ques }} </td>
-                                <td class="text-center">
-
-                                     {{ $faq->faq_ans }}
-
-                                </td>
+                                <td class="text-center">{{ $faq->vehicle->courier_type_name }} / Reg Number: {{ $faq->vehicle->registration_number }} </td>
+                                <td class="text-center">{{ $faq->first_slot }}</td>
+                                <td class="text-center">{{ $faq->sec_slot }}</td>
+                                <td class="text-center">{{ $faq->third_slot }}</td>
+                                <td class="text-center">{{ $faq->fourth_slot }}</td>
+                                <td class="text-center">{{ $faq->fifth_slot }}</td>
                                 <td class="text-center">{{ $faq->updated_at->diffForHumans() }}</td>
 
                                 <td class="text-center">

@@ -8,7 +8,7 @@
                     <i class="pe-7s-check icon-gradient bg-ripe-malin"></i>
                 </div>
                 <div>
-                    FAQS Management
+                  Bus Schedule FAQ'S Management
                 </div>
             </div>
             <div class="page-title-actions">
@@ -29,36 +29,43 @@
                     <form action="{{  route('app.faq-system.update', $faq->id) }}"
                           method="post">
                         @csrf
-
-                            @method('PUT')
-
+                        @method('PUT')
                         <div class="card-body">
-                            <h5 class="card-title">FAQ Title</h5>
-                            <div class="form-group">
-                                <label for="faq_ques">FAQ Ques</label>
-                                <input id="faq_ques" type="text" class="form-control @error('faq_ques') is-invalid @enderror"
-                                       name="faq_ques" value="{{ $faq->faq_ques }}" >
-                                <input type="hidden" name="faq_ques_id" value="{{ $faq->id }}">
-                                @error('faq_ques')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
 
                             <div class="form-group">
-                                <label for="faq_ans">FAQ Description</label>
-                                <input id="faq_ans" type="text" class="form-control @error('faq_ans') is-invalid @enderror"
-                                       name="faq_ans" value="{{ $faq->faq_ans }}" >
-
-                                @error('faq_ans')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                <label>Select Any Running Condition Bus</label>
+                                <select name="vehicle_id" class="form-control select">
+                                    @php($statuss= \App\Models\CourierType::all())
+                                    @foreach ($statuss as $status)
+                                        <option {{ ($faq->vehicle_id == $status->id) ? 'selected' : '' }} value="{{ $status->id }}">{{$status->courier_type_name}} ( Reg. Number: {{$status->registration_number}})</option>
+                                    @endforeach
+                                </select>
                             </div>
-                            <!-- Div Name End -->
-
+                            <div class="form-group">
+                                <label for="faq_ques">1st Slot</label>
+                                <input id="faq_ques" type="time" class="form-control"
+                                       name="first_slot" value="{{ $faq->first_slot ??  old('first_slot') }}">
+                            </div>
+                            <div class="form-group">
+                                <label for="faq_ques">2nd Slot</label>
+                                <input id="faq_ques" type="time" class="form-control"
+                                       name="sec_slot" value="{{ $faq->sec_slot ??  old('sec_slot') }}">
+                            </div>
+                            <div class="form-group">
+                                <label for="faq_ques">3rd Slot</label>
+                                <input id="faq_ques" type="time" class="form-control"
+                                       name="third_slot" value="{{ $faq->third_slot ??  old('third_slot') }}">
+                            </div>
+                            <div class="form-group">
+                                <label for="faq_ques">4th Slot</label>
+                                <input id="faq_ques" type="time" class="form-control"
+                                       name="fourth_slot" value="{{ $faq->fourth_slot ??  old('fourth_slot') }}">
+                            </div>
+                            <div class="form-group">
+                                <label for="faq_ques">5th Slot</label>
+                                <input id="faq_ques" type="time" class="form-control"
+                                       name="fifth_slot" value="{{ $faq->fifth_slot ??  old('fifth_slot') }}">
+                            </div>
 
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-arrow-circle-up"></i>

@@ -63,6 +63,27 @@
                 </li>
 
                 <li class="app-sidebar__heading">Management Section</li>
+
+                <li >
+                    <a href="{{ route('app.payment-service.index') }}" class="{{ Request::is('app/payment-service*') ? 'mm-active' : ''}}">
+                        <i class="metismenu-icon pe-7s-cash"></i>
+                        Payment Service
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('app.vehicle-routes.index') }}" class="{{ Request::is('app/courier-types*') ? 'mm-active' : '' }}">
+                        <i class="metismenu-icon pe-7s-safe"></i>
+                        Courier Vehicle - Route
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('app.faq-system.index') }}" class="{{ Request::is('app/faq*') ? 'mm-active' : '' }}">
+                        <i class="metismenu-icon pe-7s-comment"></i>
+                        Bus Schedule FAQ
+                    </a>
+                </li>
+                <li class="app-sidebar__heading">System Functionalities</li>
                 <li >
                     <a href="{{ route('app.roles.index') }}" class="{{ Request::is('app/roles*') ? 'mm-active' : ''}}">
                         <i class="metismenu-icon pe-7s-check"></i>
@@ -76,13 +97,6 @@
                         Users
                     </a>
                 </li>
-                <li >
-                    <a href="{{ route('app.payment-service.index') }}" class="{{ Request::is('app/payment-service*') ? 'mm-active' : ''}}">
-                        <i class="metismenu-icon pe-7s-cash"></i>
-                        Payment Service
-                    </a>
-                </li>
-                <li class="app-sidebar__heading">System Functionalities</li>
                 <li>
                     <a href="{{ route('app.office-address.index') }}" class="{{ Request::is('app/us-address*') ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-ribbon"></i>
@@ -93,20 +107,6 @@
                     <a href="{{ route('app.status.index') }}" class="{{ Request::is('app/status*') ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-gleam"></i>
                         Status
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('app.vehicle-routes.index') }}" class="{{ Request::is('app/courier-types*') ? 'mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-safe"></i>
-                        Courier Vehicle - Route
-                    </a>
-                </li>
-
-                <li class="app-sidebar__heading">Website Functionalities</li>
-                <li>
-                    <a href="{{ route('app.faq-system.index') }}" class="{{ Request::is('app/faq*') ? 'mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-comment"></i>
-                        FAQ
                     </a>
                 </li>
 

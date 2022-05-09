@@ -11,5 +11,7 @@ class FAQ extends Model
 
     protected $guarded = ['id'];
 
-
+    public function vehicle(){
+        return $this->belongsTo(CourierType::class);
+    }
 }

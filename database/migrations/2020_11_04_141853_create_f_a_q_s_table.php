@@ -15,8 +15,12 @@ class CreateFAQSTable extends Migration
     {
         Schema::create('f_a_q_s', function (Blueprint $table) {
             $table->id();
-            $table->string('faq_ques');
-            $table->longText('faq_ans');
+            $table->string('vehicle_id');
+            $table->time('first_slot')->nullable();
+            $table->time('sec_slot')->nullable();
+            $table->time('third_slot')->nullable();
+            $table->time('fourth_slot')->nullable();
+            $table->time('fifth_slot')->nullable();
             $table->timestamps();
         });
     }

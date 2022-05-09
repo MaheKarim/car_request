@@ -30,7 +30,7 @@ class CourierTypeController extends Controller
         $couriers->save();
 
         notify()->success("Vehicle Type Created Successfully","Success");
-        return redirect()->route('app.courier-types.index');
+        return redirect()->route('app.vehicle-routes.index');
     }
 
 
@@ -49,7 +49,7 @@ class CourierTypeController extends Controller
         CourierType::findOrFail($request->courier_id)->update($request->all());
 
         notify()->success("Vehicle Info Updated Successfully","Success");
-        return redirect()->route('app.courier-types.index');
+        return redirect()->route('app.vehicle-routes.index');
     }
 
     public function destroy(CourierType $courierType)
