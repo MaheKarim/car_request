@@ -21,6 +21,6 @@ class PayNow extends Model
         return $this->belongsTo(PaymentService::class, 'payment_name_id');
     }
     public function fleet(){
-        return $this->hasMany(CourierType::class, 'vehicle_id', 'id');
+        return $this->belongsToMany(CourierType::class);
     }
 }

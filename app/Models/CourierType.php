@@ -10,5 +10,7 @@ class CourierType extends Model
     use HasFactory;
     protected $guarded = ['id'];
 
-
+    public function courier(){
+        return $this->hasMany(PayNow::class);
+    }
 }

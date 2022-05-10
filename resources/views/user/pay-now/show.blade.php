@@ -48,7 +48,7 @@
                                 <td class="text-center">{{ $payment->payment_sender_traxid }}</td>
                                 <td class="text-center">{{ $payment->payment_sender_money }}</td>
                                 <td class="text-center">{{ $payment->status->status }}</td>
-{{--                                <td class="text-center">{{ $payment->fleet->registration_number }}</td>--}}
+                                <td class="text-center">{{ $payment->fleet->registration_number }}</td>
                                 <td class="text-center">{{ $payment->created_at->diffForHumans() }}</td>
                             </tr>
                         @endforeach
