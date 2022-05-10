@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f08fba6b-cc45-4a25-a02e-6f60e5803323" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/payment-status/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/payment-status/index.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="f08fba6b-cc45-4a25-a02e-6f60e5803323" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642270809234</updated>
       <workItem from="1642270811165" duration="7436000" />
-      <workItem from="1652036472900" duration="28084000" />
+      <workItem from="1652036472900" duration="28323000" />
     </task>
     <servers />
   </component>
