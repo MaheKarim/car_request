@@ -37,7 +37,7 @@
                                 <th class="text-center">Payment Service Type</th>
                                 <th class="text-center">Sent Money</th>
                                 <th class="text-center">Sender TraXID</th>
-                                <th class="text-center">Assign Vehicle</th>
+{{--                                <th class="text-center">Assign Vehicle</th>--}}
                                 <th class="text-center">Status</th>
                                 <th class="text-center">Actions</th>
                             </tr>
@@ -52,7 +52,7 @@
                                     <td class="text-center">{{ $payment->service->pay_service_name }}</td>
                                     <td class="text-center">{{ $payment->payment_sender_money }}</td>
                                     <td class="text-center">{{ $payment->payment_sender_traxid }}</td>
-                                    <td class="text-center">{{ $payment->fleet->courier_type_name }}</td>
+{{--                                    <td class="text-center">{{ $payment->fleet->courier_type_name }}</td>--}}
                                     <td class="text-center">{{ $payment->status->status }}</td>
 
                                     <td class="text-center">
